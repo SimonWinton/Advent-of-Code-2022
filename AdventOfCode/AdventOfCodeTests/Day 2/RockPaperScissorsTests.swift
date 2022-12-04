@@ -19,7 +19,7 @@ final class RockPaperScissorsTests: XCTestCase {
 
     func test_Play_ReturnsCorrectScore() {
         let score = sut.play(from: sampleData)
-        XCTAssertEqual(score, 15)
+        XCTAssertEqual(score, 12)
     }
     
     //10939 wrong - 11876 wrong too high

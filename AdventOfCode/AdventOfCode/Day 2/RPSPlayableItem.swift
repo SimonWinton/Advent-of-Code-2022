@@ -1,4 +1,4 @@
-enum RPSPlayableItem {
+enum RPSPlayableItem: CaseIterable {
     case rock
     case paper
     case scissors
@@ -25,14 +25,44 @@ enum RPSPlayableItem {
         }
     }
     
+    var beatableItem: RPSPlayableItem {
+        switch self {
+        case .scissors:
+            return .paper
+        case .paper:
+            return .rock
+        case .rock:
+            return .scissors
+        }
+    }
+    
+    func getOpponentPlay(from result: scoreType) -> RPSPlayableItem {
+        switch result {
+        case .draw:
+            return self
+        case .win:
+            var itemBeatenBy: RPSPlayableItem?
+            for item in RPSPlayableItem.allCases {
+                if item.beatableItem == self {
+                    itemBeatenBy = item
+                }
+            }
+            guard let playedItem = itemBeatenBy else { fatalError("Item not found") }
+            return playedItem
+            
+        case .lose:
+            return self.beatableItem
+        }
+    }
+    
     static func createItem(from character: String?) -> RPSPlayableItem? {
         guard let character = character else { return nil }
         
-        if character == "X" || character == "A" {
+        if character == "A" {
             return .rock
-        } else if character == "Y" || character == "B" {
+        } else if character == "B" {
             return .paper
-        } else if character == "Z" || character == "C" {
+        } else if character == "C" {
             return .scissors
         }
         return nil

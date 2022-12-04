@@ -2,12 +2,6 @@ import Foundation
 
 class RockPaperScissors {
     
-    private enum scoreValues: Int {
-        case win = 6
-        case draw = 3
-        case lose = 0
-    }
-    
     func play(from data: String) -> Int {
         let games = getGames(from: data)
         var score = 0
@@ -25,19 +19,39 @@ class RockPaperScissors {
     private func playGame(with game: String) -> Int {
         let choices = game.components(separatedBy: " ")
         let playerOne = RPSPlayableItem.createItem(from: choices.first)
-        let playerTwo = RPSPlayableItem.createItem(from: choices.last)
+        let playResult = scoreType.create(from: choices.last)
         
         guard let playerOne = playerOne,
-              let playerTwo = playerTwo else {
+              let playResult =  playResult else {
                   return 0
               }
+        let playerTwo = playerOne.getOpponentPlay(from: playResult)
         guard playerOne != playerTwo else {
-            return (playerOne.itemScore) + scoreValues.draw.rawValue
+            return (playerOne.itemScore) + scoreType.draw.rawValue
         }
         
         let didWin = playerTwo.canBeat(item: playerOne)
-        let score = didWin ? scoreValues.win.rawValue : scoreValues.lose.rawValue
+        let score = didWin ? scoreType.win.rawValue : scoreType.lose.rawValue
         let finalScore = playerTwo.itemScore + score
         return finalScore
+    }
+}
+
+enum scoreType: Int {
+    case win = 6
+    case draw = 3
+    case lose = 0
+    
+    static func create(from character: String?) -> scoreType? {
+        guard let character = character else { return nil }
+        
+        if character == "X" {
+            return .lose
+        } else if character == "Y" {
+            return .draw
+        } else if character == "Z" {
+            return .win
+        }
+        return nil
     }
 }
