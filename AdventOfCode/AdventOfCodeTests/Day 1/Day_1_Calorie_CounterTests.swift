@@ -46,7 +46,7 @@ final class Day_1_Calorie_CounterTests: XCTestCase {
     
     private func importValues() -> String {
         do {
-            guard let fileUrl = Bundle.main.url(forResource: "Day1input", withExtension: "txt") else {
+            guard let fileUrl = Bundle.main.url(forResource: "Day1Input", withExtension: "txt") else {
                 fatalError()
             }
             return try String(contentsOf: fileUrl, encoding: String.Encoding.utf8)

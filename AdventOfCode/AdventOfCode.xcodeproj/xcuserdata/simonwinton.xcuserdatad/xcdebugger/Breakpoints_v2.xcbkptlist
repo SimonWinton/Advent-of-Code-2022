@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D5D882CD-023E-446B-BB7E-C54427AEDD9A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7A6F6D05-C7C3-4751-A5EA-6CA5AE101A29"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCodeTests/Day 2/RockPaperScissorsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "test_Play_RealData_ReturnsCorrectScore()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7A6F6D05-C7C3-4751-A5EA-6CA5AE101A29 - bd588af56553a203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AdventOfCodeTests.RockPaperScissorsTests.test_Play_RealData_ReturnsCorrectScore() -&gt; ()"
+                  moduleName = "AdventOfCodeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simonwinton/Documents/GitHub/Advent-of-Code-2022/AdventOfCode/AdventOfCodeTests/Day%202/RockPaperScissorsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "439">
+               </Location>
+               <Location
+                  uuid = "7A6F6D05-C7C3-4751-A5EA-6CA5AE101A29 - bd588af56553a203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AdventOfCodeTests.RockPaperScissorsTests.test_Play_RealData_ReturnsCorrectScore() -&gt; ()"
+                  moduleName = "AdventOfCodeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/simonwinton/Documents/GitHub/Advent-of-Code-2022/AdventOfCode/AdventOfCodeTests/Day%202/RockPaperScissorsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "331">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F566E25-3F65-4A20-A18A-CD4BB49B9BE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode/Day 2/Rock Paper Scissors.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "playGame(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2D96103-1C69-48E9-9581-60CCE5B18432"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AdventOfCode/Day 2/Rock Paper Scissors.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "playGame(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
