@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		54D99820293CE22000B86D93 /* Day 1 Calorie Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Day 1 Calorie Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D99820293CE22000B86D93 /* AdventOfCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D99823293CE22000B86D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D99825293CE22000B86D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54D99827293CE22000B86D93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,9 +46,9 @@
 		54D9982C293CE22200B86D93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54D9982F293CE22200B86D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D99831293CE22200B86D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54D99836293CE22300B86D93 /* Day 1 Calorie CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 1 Calorie CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D99836293CE22300B86D93 /* AdventOfCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D9983A293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterTests.swift; sourceTree = "<group>"; };
-		54D99840293CE22300B86D93 /* Day 1 Calorie CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 1 Calorie CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D99840293CE22300B86D93 /* AdventOfCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdventOfCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITests.swift; sourceTree = "<group>"; };
 		54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54D99853293CE32800B86D93 /* CalorieCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounter.swift; sourceTree = "<group>"; };
@@ -80,12 +80,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54167AF1293CFFA6005F3899 /* Day 1 */ = {
+			isa = PBXGroup;
+			children = (
+				54D99855293CE59800B86D93 /* input.txt */,
+				54D99853293CE32800B86D93 /* CalorieCounter.swift */,
+			);
+			path = "Day 1";
+			sourceTree = "<group>";
+		};
+		54167AF2293CFFBC005F3899 /* Day 1 */ = {
+			isa = PBXGroup;
+			children = (
+				54D9983A293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift */,
+			);
+			path = "Day 1";
+			sourceTree = "<group>";
+		};
+		54167AF3293CFFC6005F3899 /* Day 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Day 2";
+			sourceTree = "<group>";
+		};
+		54167AF4293CFFF5005F3899 /* Day 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Day 2";
+			sourceTree = "<group>";
+		};
 		54D99817293CE22000B86D93 = {
 			isa = PBXGroup;
 			children = (
-				54D99822293CE22000B86D93 /* Day 1 Calorie Counter */,
-				54D99839293CE22300B86D93 /* Day 1 Calorie CounterTests */,
-				54D99843293CE22300B86D93 /* Day 1 Calorie CounterUITests */,
+				54D99822293CE22000B86D93 /* AdventOfCode */,
+				54D99839293CE22300B86D93 /* AdventOfCodeTests */,
+				54D99843293CE22300B86D93 /* AdventOfCodeUITests */,
 				54D99821293CE22000B86D93 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,17 +124,18 @@
 		54D99821293CE22000B86D93 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				54D99820293CE22000B86D93 /* Day 1 Calorie Counter.app */,
-				54D99836293CE22300B86D93 /* Day 1 Calorie CounterTests.xctest */,
-				54D99840293CE22300B86D93 /* Day 1 Calorie CounterUITests.xctest */,
+				54D99820293CE22000B86D93 /* AdventOfCode.app */,
+				54D99836293CE22300B86D93 /* AdventOfCodeTests.xctest */,
+				54D99840293CE22300B86D93 /* AdventOfCodeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		54D99822293CE22000B86D93 /* Day 1 Calorie Counter */ = {
+		54D99822293CE22000B86D93 /* AdventOfCode */ = {
 			isa = PBXGroup;
 			children = (
-				54D99855293CE59800B86D93 /* input.txt */,
+				54167AF1293CFFA6005F3899 /* Day 1 */,
+				54167AF4293CFFF5005F3899 /* Day 2 */,
 				54D99823293CE22000B86D93 /* AppDelegate.swift */,
 				54D99825293CE22000B86D93 /* SceneDelegate.swift */,
 				54D99827293CE22000B86D93 /* ViewController.swift */,
@@ -111,34 +143,34 @@
 				54D9982C293CE22200B86D93 /* Assets.xcassets */,
 				54D9982E293CE22200B86D93 /* LaunchScreen.storyboard */,
 				54D99831293CE22200B86D93 /* Info.plist */,
-				54D99853293CE32800B86D93 /* CalorieCounter.swift */,
 			);
-			path = "Day 1 Calorie Counter";
+			path = AdventOfCode;
 			sourceTree = "<group>";
 		};
-		54D99839293CE22300B86D93 /* Day 1 Calorie CounterTests */ = {
+		54D99839293CE22300B86D93 /* AdventOfCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				54D9983A293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift */,
+				54167AF2293CFFBC005F3899 /* Day 1 */,
+				54167AF3293CFFC6005F3899 /* Day 2 */,
 			);
-			path = "Day 1 Calorie CounterTests";
+			path = AdventOfCodeTests;
 			sourceTree = "<group>";
 		};
-		54D99843293CE22300B86D93 /* Day 1 Calorie CounterUITests */ = {
+		54D99843293CE22300B86D93 /* AdventOfCodeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */,
 				54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */,
 			);
-			path = "Day 1 Calorie CounterUITests";
+			path = AdventOfCodeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		54D9981F293CE22000B86D93 /* Day 1 Calorie Counter */ = {
+		54D9981F293CE22000B86D93 /* AdventOfCode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54D9984A293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie Counter" */;
+			buildConfigurationList = 54D9984A293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCode" */;
 			buildPhases = (
 				54D9981C293CE22000B86D93 /* Sources */,
 				54D9981D293CE22000B86D93 /* Frameworks */,
@@ -148,14 +180,14 @@
 			);
 			dependencies = (
 			);
-			name = "Day 1 Calorie Counter";
+			name = AdventOfCode;
 			productName = "Day 1 Calorie Counter";
-			productReference = 54D99820293CE22000B86D93 /* Day 1 Calorie Counter.app */;
+			productReference = 54D99820293CE22000B86D93 /* AdventOfCode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		54D99835293CE22300B86D93 /* Day 1 Calorie CounterTests */ = {
+		54D99835293CE22300B86D93 /* AdventOfCodeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54D9984D293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie CounterTests" */;
+			buildConfigurationList = 54D9984D293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */;
 			buildPhases = (
 				54D99832293CE22300B86D93 /* Sources */,
 				54D99833293CE22300B86D93 /* Frameworks */,
@@ -166,14 +198,14 @@
 			dependencies = (
 				54D99838293CE22300B86D93 /* PBXTargetDependency */,
 			);
-			name = "Day 1 Calorie CounterTests";
+			name = AdventOfCodeTests;
 			productName = "Day 1 Calorie CounterTests";
-			productReference = 54D99836293CE22300B86D93 /* Day 1 Calorie CounterTests.xctest */;
+			productReference = 54D99836293CE22300B86D93 /* AdventOfCodeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		54D9983F293CE22300B86D93 /* Day 1 Calorie CounterUITests */ = {
+		54D9983F293CE22300B86D93 /* AdventOfCodeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 54D99850293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie CounterUITests" */;
+			buildConfigurationList = 54D99850293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCodeUITests" */;
 			buildPhases = (
 				54D9983C293CE22300B86D93 /* Sources */,
 				54D9983D293CE22300B86D93 /* Frameworks */,
@@ -184,9 +216,9 @@
 			dependencies = (
 				54D99842293CE22300B86D93 /* PBXTargetDependency */,
 			);
-			name = "Day 1 Calorie CounterUITests";
+			name = AdventOfCodeUITests;
 			productName = "Day 1 Calorie CounterUITests";
-			productReference = 54D99840293CE22300B86D93 /* Day 1 Calorie CounterUITests.xctest */;
+			productReference = 54D99840293CE22300B86D93 /* AdventOfCodeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 54D9981B293CE22000B86D93 /* Build configuration list for PBXProject "Day 1 Calorie Counter" */;
+			buildConfigurationList = 54D9981B293CE22000B86D93 /* Build configuration list for PBXProject "AdventOfCode" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,9 +257,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				54D9981F293CE22000B86D93 /* Day 1 Calorie Counter */,
-				54D99835293CE22300B86D93 /* Day 1 Calorie CounterTests */,
-				54D9983F293CE22300B86D93 /* Day 1 Calorie CounterUITests */,
+				54D9981F293CE22000B86D93 /* AdventOfCode */,
+				54D99835293CE22300B86D93 /* AdventOfCodeTests */,
+				54D9983F293CE22300B86D93 /* AdventOfCodeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -294,12 +326,12 @@
 /* Begin PBXTargetDependency section */
 		54D99838293CE22300B86D93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 54D9981F293CE22000B86D93 /* Day 1 Calorie Counter */;
+			target = 54D9981F293CE22000B86D93 /* AdventOfCode */;
 			targetProxy = 54D99837293CE22300B86D93 /* PBXContainerItemProxy */;
 		};
 		54D99842293CE22300B86D93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 54D9981F293CE22000B86D93 /* Day 1 Calorie Counter */;
+			target = 54D9981F293CE22000B86D93 /* AdventOfCode */;
 			targetProxy = 54D99841293CE22300B86D93 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -510,7 +542,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day 1 Calorie Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day 1 Calorie Counter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventOfCode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdventOfCode";
 			};
 			name = Debug;
 		};
@@ -530,7 +562,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day 1 Calorie Counter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Day 1 Calorie Counter";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdventOfCode.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AdventOfCode";
 			};
 			name = Release;
 		};
@@ -573,7 +605,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		54D9981B293CE22000B86D93 /* Build configuration list for PBXProject "Day 1 Calorie Counter" */ = {
+		54D9981B293CE22000B86D93 /* Build configuration list for PBXProject "AdventOfCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54D99848293CE22300B86D93 /* Debug */,
@@ -582,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54D9984A293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie Counter" */ = {
+		54D9984A293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54D9984B293CE22300B86D93 /* Debug */,
@@ -591,7 +623,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54D9984D293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie CounterTests" */ = {
+		54D9984D293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCodeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54D9984E293CE22300B86D93 /* Debug */,
@@ -600,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		54D99850293CE22300B86D93 /* Build configuration list for PBXNativeTarget "Day 1 Calorie CounterUITests" */ = {
+		54D99850293CE22300B86D93 /* Build configuration list for PBXNativeTarget "AdventOfCodeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				54D99851293CE22300B86D93 /* Debug */,
