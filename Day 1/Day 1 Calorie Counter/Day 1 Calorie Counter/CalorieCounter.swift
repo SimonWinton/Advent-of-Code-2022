@@ -2,19 +2,28 @@ import Foundation
 
 protocol CalorieCounting {
     func getMostCalories(from input: String) -> Int
-    
+    func getThreeMostCalories(from input: String) -> Int
 }
 
 class CalorieCounter {
     
     func getMostCalories(from input: String) -> Int {
         let valuesByElf = getValuesPerElf(input: input)
-        let addCaloriesTogether = addCaloriesTogether(values: valuesByElf)
-        return addCaloriesTogether.max() ?? 0
+        return valuesByElf.max() ?? 0
+    }
+    
+    func getThreeMostCalories(from input: String) -> Int {
+        let valuesByElf = getValuesPerElf(input: input)
+        let sortedArray = valuesByElf.sorted(by: {$0 > $1})
+        let values = sortedArray[0...2].reduce(0, { x, y in
+            x + y
+        })
+        return values
     }
 
-    private func getValuesPerElf(input: String) -> [String] {
-        return  input.components(separatedBy: "\n\n")
+    private func getValuesPerElf(input: String) -> [Int] {
+        let valuesByElf = input.components(separatedBy: "\n\n")
+        return addCaloriesTogether(values: valuesByElf)
     }
     
     private func addCaloriesTogether(values: [String]) -> [Int] {

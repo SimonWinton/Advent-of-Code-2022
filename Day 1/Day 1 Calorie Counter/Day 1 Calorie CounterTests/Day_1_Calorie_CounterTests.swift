@@ -29,9 +29,19 @@ final class Day_1_Calorie_CounterTests: XCTestCase {
         XCTAssertEqual(highestCalorieCount, 24000)
     }
     
-    func test_GetMostCalories_sampleData_ReturnsHighestValueFromData() {
+    func test_GetMostCalories_realData_ReturnsHighestValueFromData() {
         let highestCalorieCount = sut.getMostCalories(from: importValues())
         print(highestCalorieCount)
+    }
+    
+    func test_GetThreeMostCalories_sampleData_ReturnsHighestThreeValuesFromDataCombinedAt45000() {
+        let topThreeCalorieCount = sut.getThreeMostCalories(from: sampleData)
+        XCTAssertEqual(topThreeCalorieCount, 45000)
+    }
+    
+    func test_GetThreeMostCalories_realData_ReturnsHighestThreeValuesFromDataCombined() {
+        let topThreeCalorieCount = sut.getThreeMostCalories(from: importValues())
+        print(topThreeCalorieCount)
     }
     
     private func importValues() -> String {
