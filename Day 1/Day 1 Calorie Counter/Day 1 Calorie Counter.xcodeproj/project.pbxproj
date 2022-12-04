@@ -16,6 +16,8 @@
 		54D9983B293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9983A293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift */; };
 		54D99845293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */; };
 		54D99847293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */; };
+		54D99854293CE32800B86D93 /* CalorieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99853293CE32800B86D93 /* CalorieCounter.swift */; };
+		54D99856293CE59800B86D93 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54D99855293CE59800B86D93 /* input.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		54D99840293CE22300B86D93 /* Day 1 Calorie CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Day 1 Calorie CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITests.swift; sourceTree = "<group>"; };
 		54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		54D99853293CE32800B86D93 /* CalorieCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounter.swift; sourceTree = "<group>"; };
+		54D99855293CE59800B86D93 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		54D99822293CE22000B86D93 /* Day 1 Calorie Counter */ = {
 			isa = PBXGroup;
 			children = (
+				54D99855293CE59800B86D93 /* input.txt */,
 				54D99823293CE22000B86D93 /* AppDelegate.swift */,
 				54D99825293CE22000B86D93 /* SceneDelegate.swift */,
 				54D99827293CE22000B86D93 /* ViewController.swift */,
@@ -106,6 +111,7 @@
 				54D9982C293CE22200B86D93 /* Assets.xcassets */,
 				54D9982E293CE22200B86D93 /* LaunchScreen.storyboard */,
 				54D99831293CE22200B86D93 /* Info.plist */,
+				54D99853293CE32800B86D93 /* CalorieCounter.swift */,
 			);
 			path = "Day 1 Calorie Counter";
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				54D99830293CE22200B86D93 /* LaunchScreen.storyboard in Resources */,
 				54D9982D293CE22200B86D93 /* Assets.xcassets in Resources */,
 				54D9982B293CE22000B86D93 /* Main.storyboard in Resources */,
+				54D99856293CE59800B86D93 /* input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +267,7 @@
 			files = (
 				54D99828293CE22000B86D93 /* ViewController.swift in Sources */,
 				54D99824293CE22000B86D93 /* AppDelegate.swift in Sources */,
+				54D99854293CE32800B86D93 /* CalorieCounter.swift in Sources */,
 				54D99826293CE22000B86D93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

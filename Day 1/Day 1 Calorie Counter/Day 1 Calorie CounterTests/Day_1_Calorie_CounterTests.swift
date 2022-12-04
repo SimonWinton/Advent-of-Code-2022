@@ -10,26 +10,38 @@ import XCTest
 
 final class Day_1_Calorie_CounterTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var sut: CalorieCounter!
+    
+    let sampleData = "1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000"
+    
+    override func setUp() {
+        super.setUp()
+        sut = CalorieCounter()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        sut = nil
+        super.tearDown()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test_GetMostCalories_sampleData_ReturnsHighestValueAt24000() {
+        let highestCalorieCount = sut.getMostCalories(from: sampleData)
+        XCTAssertEqual(highestCalorieCount, 24000)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func test_GetMostCalories_sampleData_ReturnsHighestValueFromData() {
+        let highestCalorieCount = sut.getMostCalories(from: importValues())
+        print(highestCalorieCount)
+    }
+    
+    private func importValues() -> String {
+        do {
+            guard let fileUrl = Bundle.main.url(forResource: "input", withExtension: "txt") else {
+                fatalError()
+            }
+            return try String(contentsOf: fileUrl, encoding: String.Encoding.utf8)
+        } catch {
+            fatalError("Unable to find file")
         }
     }
 
