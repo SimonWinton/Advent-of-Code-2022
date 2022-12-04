@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54167AFA293D012C005F3899 /* Rock Paper Scissors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54167AF9293D012C005F3899 /* Rock Paper Scissors.swift */; };
+		54167AFC293D0140005F3899 /* RockPaperScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54167AFB293D0140005F3899 /* RockPaperScissorsTests.swift */; };
+		54167AFE293D032F005F3899 /* day2input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54167AFD293D032F005F3899 /* day2input.txt */; };
+		54167B00293D118C005F3899 /* RPSPlayableItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54167AFF293D118C005F3899 /* RPSPlayableItemTests.swift */; };
 		54D99824293CE22000B86D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99823293CE22000B86D93 /* AppDelegate.swift */; };
 		54D99826293CE22000B86D93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99825293CE22000B86D93 /* SceneDelegate.swift */; };
 		54D99828293CE22000B86D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99827293CE22000B86D93 /* ViewController.swift */; };
@@ -17,7 +21,7 @@
 		54D99845293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */; };
 		54D99847293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */; };
 		54D99854293CE32800B86D93 /* CalorieCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D99853293CE32800B86D93 /* CalorieCounter.swift */; };
-		54D99856293CE59800B86D93 /* input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54D99855293CE59800B86D93 /* input.txt */; };
+		54D99856293CE59800B86D93 /* Day1input.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54D99855293CE59800B86D93 /* Day1input.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54167AF9293D012C005F3899 /* Rock Paper Scissors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rock Paper Scissors.swift"; sourceTree = "<group>"; };
+		54167AFB293D0140005F3899 /* RockPaperScissorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RockPaperScissorsTests.swift; sourceTree = "<group>"; };
+		54167AFD293D032F005F3899 /* day2input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = day2input.txt; sourceTree = "<group>"; };
+		54167AFF293D118C005F3899 /* RPSPlayableItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSPlayableItemTests.swift; sourceTree = "<group>"; };
 		54D99820293CE22000B86D93 /* AdventOfCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdventOfCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D99823293CE22000B86D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D99825293CE22000B86D93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +60,7 @@
 		54D99844293CE22300B86D93 /* Day_1_Calorie_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITests.swift; sourceTree = "<group>"; };
 		54D99846293CE22300B86D93 /* Day_1_Calorie_CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day_1_Calorie_CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		54D99853293CE32800B86D93 /* CalorieCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCounter.swift; sourceTree = "<group>"; };
-		54D99855293CE59800B86D93 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
+		54D99855293CE59800B86D93 /* Day1input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day1input.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +91,7 @@
 		54167AF1293CFFA6005F3899 /* Day 1 */ = {
 			isa = PBXGroup;
 			children = (
-				54D99855293CE59800B86D93 /* input.txt */,
+				54D99855293CE59800B86D93 /* Day1input.txt */,
 				54D99853293CE32800B86D93 /* CalorieCounter.swift */,
 			);
 			path = "Day 1";
@@ -100,6 +108,8 @@
 		54167AF3293CFFC6005F3899 /* Day 2 */ = {
 			isa = PBXGroup;
 			children = (
+				54167AFB293D0140005F3899 /* RockPaperScissorsTests.swift */,
+				54167AFF293D118C005F3899 /* RPSPlayableItemTests.swift */,
 			);
 			path = "Day 2";
 			sourceTree = "<group>";
@@ -107,6 +117,8 @@
 		54167AF4293CFFF5005F3899 /* Day 2 */ = {
 			isa = PBXGroup;
 			children = (
+				54167AFD293D032F005F3899 /* day2input.txt */,
+				54167AF9293D012C005F3899 /* Rock Paper Scissors.swift */,
 			);
 			path = "Day 2";
 			sourceTree = "<group>";
@@ -270,9 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D99830293CE22200B86D93 /* LaunchScreen.storyboard in Resources */,
+				54167AFE293D032F005F3899 /* day2input.txt in Resources */,
 				54D9982D293CE22200B86D93 /* Assets.xcassets in Resources */,
 				54D9982B293CE22000B86D93 /* Main.storyboard in Resources */,
-				54D99856293CE59800B86D93 /* input.txt in Resources */,
+				54D99856293CE59800B86D93 /* Day1input.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +313,7 @@
 				54D99828293CE22000B86D93 /* ViewController.swift in Sources */,
 				54D99824293CE22000B86D93 /* AppDelegate.swift in Sources */,
 				54D99854293CE32800B86D93 /* CalorieCounter.swift in Sources */,
+				54167AFA293D012C005F3899 /* Rock Paper Scissors.swift in Sources */,
 				54D99826293CE22000B86D93 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54167B00293D118C005F3899 /* RPSPlayableItemTests.swift in Sources */,
+				54167AFC293D0140005F3899 /* RockPaperScissorsTests.swift in Sources */,
 				54D9983B293CE22300B86D93 /* Day_1_Calorie_CounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +495,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q35H756ADW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Day 1 Calorie Counter/Info.plist";
+				INFOPLIST_FILE = AdventOfCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -507,7 +523,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q35H756ADW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Day 1 Calorie Counter/Info.plist";
+				INFOPLIST_FILE = AdventOfCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
